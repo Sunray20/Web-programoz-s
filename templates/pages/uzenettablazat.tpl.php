@@ -4,7 +4,7 @@ try {
                     array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
     $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
     
-    $utasitas = "Select nev, email, uzenet From uzenetek";
+    $utasitas = "Select id, nev, email, uzenet From uzenetek ORDER BY ID DESC";
     $eredm = $dbh->query($utasitas);
     ?>
     <main role="main">
@@ -15,16 +15,14 @@ try {
                 <table class="table table-striped">
                     <thead class="bg-dark text-white">
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">Név</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Üzenet</th>
                       </tr>
                     </thead>
                     <tbody>
                         <?php foreach ($eredm as $sor){ ?>
                             <tr>
-                            <th scope="row">1</th>
                             <td><?=$sor['nev']?></td>
                             <td><?=$sor['email']?></td>
                             <td><?=$sor['uzenet']?></td>

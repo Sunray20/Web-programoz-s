@@ -75,7 +75,7 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/OK_JCtrrv-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="col-lg-6 text-right">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OK_JCtrrv-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <video controls="" autoplay="" name="media" width="100%" height="315px"><source src="videos/test.mp4"  type="video/mp4"></video>
                 </div>
             </div>
             
