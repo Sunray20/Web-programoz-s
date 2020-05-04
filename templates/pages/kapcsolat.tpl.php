@@ -24,7 +24,7 @@
                                         </div>
                                     </div>
                                     <input type="text" class="form-control" name="nev" placeholder="Név"
-                                        required="">
+                                        pattern="[a-zA-ZáÁéÉíÍóÓöÖőŐúÚüÜűŰ ]+" required="">
                                 </div>
                             </div>
                             <div class="form-group">
